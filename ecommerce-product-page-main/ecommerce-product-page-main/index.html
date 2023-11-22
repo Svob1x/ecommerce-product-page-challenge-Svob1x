@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+<header>
+  <nav class="navigation-menu">
+    <div class="menu-left">
+      <img src="images/logo.svg" alt="menu-logo">
+    </div>
+    <div class="menu-middle">
+    <ul class="nav-links">
+      <li class="nav-link">Collections</li>
+      <li class="nav-link">Men</li>
+      <li class="nav-link">Women</li>
+      <li class="nav-link">About</li>
+      <li class="nav-link">Contact</li>
+    </ul>
+    </div>
+    <div class="menu-right">
+      <img class="cart" src="images/icon-cart.svg" alt="cart">
+      <img class="avatar" src="images/image-avatar.png" alt="avatar">
+    </div>
+  </nav>
+</header>
+<main class="main-page-info">
+  <div class="images-main">
+    <div class="img-main">
+      <img id="imageBox" src="images/image-product-1.jpg">
+    </div>
+    <div class="product-small-img">
+      <div class="focus" tabindex="1">
+        <img class="focus-img" src="images/image-product-1.jpg" onclick="myFunction(this);">
+      </div>
+      <div class="focus" tabindex="1">
+        <img class="focus-img" src="images/image-product-2.jpg" onclick="myFunction(this);">
+      </div>
+      <div class="focus" tabindex="1">
+        <img class="focus-img" src="images/image-product-3.jpg" onclick="myFunction(this);">
+      </div>
+      <div class="focus" tabindex="1">
+        <img class="focus-img" src="images/image-product-4.jpg" onclick="myFunction(this);">
+      </div>
+    </div>
+  </div>
+  <div class="text-main">
+  <h1>SNEAKER COMPANY</h1>
+    <h2>Fall Limited Edition Sneakers</h2>
+    <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+      durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+    <div class="cena">
+      <h3>$125.00</h3>
+      <h4>50%</h4>
+    </div>
+    <s>$250.00</s>
+    <div class="kosik">
+      <div class="nakup">
+        <span class="minus"><img src="images/icon-minus.svg" alt="minus"></span>
+        <span class="num">0</span>
+        <span class="plus"><img src="images/icon-plus.svg" alt="plus"></span>
+      </div>
+      <script src="script.js"></script>
+      <div class="button-kosik">
+        <img src="images/icon-cart.svg">
+        <a>Add to cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <div class="images-main">
+        <div class="img-main">
+          <img id="imageBox1" src="images/image-product-1.jpg">
+        </div>
+        <div class="product-small-img1">
+          <div class="focus1" tabindex="1">
+            <img src="images/image-product-1.jpg" onclick="myFunction1(this);">
+          </div>
+          <div class="focus1" tabindex="1">
+            <img src="images/image-product-2.jpg" onclick="myFunction1(this);">
+          </div>
+          <div class="focus1" tabindex="1">
+            <img src="images/image-product-3.jpg" onclick="myFunction1(this);">
+          </div>
+          <div class="focus1" tabindex="1">
+            <img src="images/image-product-4.jpg" onclick="myFunction1(this);">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
